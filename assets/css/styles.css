@@ -3,6 +3,15 @@ body {
     font-size: 20px;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header p {
+    margin: 0;
+}
+
 .container {
     width: 70%;
     margin: 0 auto;
