@@ -9,12 +9,25 @@
 <body>
     <header>
         <p>View Highscores</p>
-        <p>Time: 0</p>
+        <p class="timer">Time: <span id="timer">75</span></p>
     </header>
-    <div class="container flexbox">
-        <h1>Coding Quiz Challenge</h1>
-        <p>Try answering all of the questions in the alloted time. If you answer incorrectly, additional time will be reduced from the timer. At the end of the quiz, feel free to add your initials to the scoreboard!</p>
-        <button id="start" type="button">Start Quiz</button>
+    <div class="container">
+        <!-- Home div with Start button -->
+        <div class="flexbox">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button id="start" type="button">Start Quiz</button>
+        </div>
+
+        <!-- Div where questions will appear -->
+        <div class="quiz">
+
+        </div>
+
+        <!-- Div where correct/wrong will appear -->
+        <div id="acknowledge-answer">
+            <p id="validate-answer"></p>
+        </div>
     </div>
 
     <script src='assets/scripts/behavior.js'></script>

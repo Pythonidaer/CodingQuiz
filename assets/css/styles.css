@@ -12,8 +12,16 @@ header p {
     margin: 0;
 }
 
+header > p:first-child {
+    color: rgb(74, 29, 126);
+}
+
+p {
+    margin-top: 0;
+}
+
 .container {
-    width: 70%;
+    width: 610px;
     margin: 0 auto;
 }
 
@@ -26,8 +34,22 @@ h1 {
     flex-direction: column;
 }
 
+.flexbox > p {
+    text-align: center;
+}
+
+.quiz {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.initialsContainer {
+    margin-bottom: 1rem;
+}
+
 button {
-    background: rgb(128, 0, 128);
+    background: rgb(74, 29, 126);
     color: white;
     outline: none;
     padding: 3px 9px;
@@ -39,5 +61,43 @@ button {
 }
 
 button:hover, button:focus {
-    background: rgba(128, 0, 128, 0.7);
+    background: rgba(74, 29, 126, 0.8);
+}
+
+.btn-spacing {
+    margin: 1.4rem .7rem 0 0;
+}
+
+.selectionBtn {
+    margin: 0 auto 1rem 0;
+}
+
+input {
+    margin: 0 10px;
+    height: 1.4rem;
+    width: 230px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    background: #EBE7F7;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#acknowledge-answer {
+    padding: 5px;
+    border-top: 2px solid #777;
+    color: #777;
+    font-style: italic;
+    display: none;
 }
