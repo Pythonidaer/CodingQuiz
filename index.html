@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <p>View Highscores</p>
+        <p id="view-highscores">View Highscores</p>
         <p class="timer">Time: <span id="timer">75</span></p>
     </header>
     <div class="container">
         <!-- Home div with Start button -->
         <div class="flexbox">
             <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by fifteen seconds!</p>
             <button id="start" type="button">Start Quiz</button>
         </div>
 
@@ -33,42 +33,4 @@
     <script src='assets/scripts/behavior.js'></script>
 </body>
 </html>
-
-<!-- 
-    Nelli's questions
-    Terminology is always good.
-The difference between var, let, const.
-The reason #id is important.
-The reason a file might grab a dom element as undefined.
-Basic if-else structure.
-Difference between a while loop and an iteration.
-Anonymous function.
- -->
-
- <!-- 
-     What I want to do next:
-     Start button has timer go down from 75 seconds but stays on page
-     
-     Home page has View Highscores in left corner and Time: 0 in right corner
-     Start button needs to stay on this page
-
-     Start button shows first question
-     Clicking answer (1-4) switches to next question
-     If answer is right or wrong, a grey 'Correct!' or 'Wrong!' shows at the bottom under a <hr>
-
-     When last question (or time runs out) is answered:
-
-     "All done!"
-
-     Your final score is: ___ Submit
-
-     Submit goes to:
-
-     "Highscores" (highscores.html - a different page!)
-     two buttons:
-     - Go Back (to index.html)
-     - Clear Highscores (clears scoreboard, otherwise users localScores should remain)
-
-
-
-  -->
+ 
