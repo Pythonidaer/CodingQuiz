@@ -1,9 +1,9 @@
+/* General Styling */
 body {
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
 }
-
+/* Separate 'View Highscores' from 'Time: ##' */
 header {
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@ header {
 header p {
     margin: 0;
 }
-
+/* Make 'View Highscores' resembled a hover cursor */
 #view-highscores {
     cursor: pointer;
     padding: 0 20px 15px 0;
@@ -25,7 +25,7 @@ header > p:first-child {
 p {
     margin-top: 0;
 }
-
+/* Store all content within a ~600px wrapper on large screen */
 .container {
     width: 610px;
     margin: 0 auto;
@@ -34,7 +34,7 @@ p {
 h1 {
     text-align: center;
 }
-
+/* Center home page text and buttons */
  .startText {
     display: flex;
     flex-direction: column;
@@ -50,18 +50,19 @@ h1 {
     flex-direction: column;
 }
 
+/* Add spacing where you enter Initials to separate from warning divs */
 .initialsContainer {
     margin-bottom: 1rem;
 }
 
+/* Styling for all buttons: start, "selection", submit initials, clear scores, home */
 button {
     background: rgb(74, 29, 126);
     color: white;
     outline: none;
     padding: 3px 9px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -78,6 +79,7 @@ button:hover, button:focus {
     margin: 0 auto 1rem 0;
 }
 
+/* Could use some mobile-spiffying up */
 input {
     margin: 0 10px;
     height: 1.4rem;
@@ -93,6 +95,7 @@ ul {
     margin: 0;
 }
 
+/* Styles the scores to have light lavendar background and white spacing between scores */
 li {
     list-style: none;
     background: #EBE7F7;
@@ -100,6 +103,7 @@ li {
     margin-bottom: 5px;
 }
 
+/* Shows a div for Correct! or Wrong! in JavaScript */
 #acknowledge-answer {
     padding: 5px;
     border-top: 2px solid #777;

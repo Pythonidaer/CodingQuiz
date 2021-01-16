@@ -7,68 +7,82 @@ The data-index is set via looping over quizQuestions array length, which loops a
 */
 let quizQuestions = [
     {
-    "question": "Commonly used data types DO NOT include:",
-    "selection": ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
-    "answer": 2
+    question: "Commonly used data types DO NOT include:",
+    selection: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
+    answer: 2
     },
     {
-    "question": "The condition in an if / else statement is enclosed within ____.",
-    "selection": ["1. quotes", "2. curly brackets", "3. parentheses", "4. square brackets"],
-    "answer": 2
+    question: "The condition in an if / else statement is enclosed within ____.",
+    selection: ["1. quotes", "2. curly brackets", "3. parentheses", "4. square brackets"],
+    answer: 2
     },
     {
-    "question": "Arrays in JavaScript can be used to store ____.",
-    "selection": ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
-    "answer": 3
+    question: "Arrays in JavaScript can be used to store ____.",
+    selection: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
+    answer: 3
     },
     {
-    "question": "String values must be enclosed within ____ when being assigned to variables.",
-    "selection": ["1. commas", "2. curly brackets", "3. quotes", "4. parentheses"],
-    "answer": 2
+    question: "String values must be enclosed within ____ when being assigned to variables.",
+    selection: ["1. commas", "2. curly brackets", "3. quotes", "4. parentheses"],
+    answer: 2
     },
     {
-    "question": "A very useful tool used during development and debugging for printing content to the debugger is:",
-    "selection": ["1. JavaScript", "2. terminal / bash", "3. for loops", "4. console.log"],
-    "answer": 3
+    question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+    selection: ["1. JavaScript", "2. terminal / bash", "3. for loops", "4. console.log"],
+    answer: 3
     }
 ];
 
 /*
 Here I declare 14 variables:
-    1. quizSection is constantly emptied and refilled with: quizQuestions, endGame (enter initials), and the scoreBoard
-    2. timeRemaining is just an integer! it decreases with the countDown(), and at endGame() it is the value assigned to finalScore
-    3a. timeInCorner gets the <span> specifically wrapped around the textContent 75
-    3b. timeInCorner (html) gets reassigned timeRemaining for each countDown() interval, and is used to +/- or check for time as well
-    4. callCountDown is located in the timer(), it calls countDown() every 1000ms until the endGame() clearsOut this `timeoutID`
-    5. finalScore is only declared now; it is heavily tied to timeRemaining; once it has a score, it gets added to the newScore object
-    6a. userScores will be assigned either an [] if no scores exist, or an array of newScores, which get added to the scoreBoard() page
-    6b. 'userScores', the localStorage Key, is parsed(get) and stringified(set) - it will always ever only be one key of 1 or more objects
-    7. newScore is an object that receives the k:v pairs "name" (initials) and "score" (finalScore) and is pushed to the userScores array
-    8a. quizArrayIndex is simply a counter for the quizQuestions array; it starts at 0 and will end the timer if there are no more questions
-    8b. quizArrayIndex also is as an initiator/array[i] variable in two for loops:
-         1. The 1st loop is stored in renderQuestion(); this innerHTMLs the question, then fills buttons with "selection" content array items 
-         2. The 2nd loop is stored in toggleQuestion(); this checks for the data-index "choice" on event.target to compare it to the "answer"
-    9. header is only used once; on the gif provided for the assignment model, "VIEW HIGHSCORES" + "TIME: 75" disappears on scoreBoard() call
-    10. startBtn relates to the id of the "Start Quiz" button on the home screen (first sequence); when clicked it calls timer() & render?()
-    11. acknowledgeAnswer is a <div> with an empty <p> that will either say "Correct" or "Wrong", or alert the user when initial input is 🗑️
-    12. validateAnswer is the <p> within acknowledgeAnswer that either acknowledgesAnswer or warns the user if (no initials OR > 4 letters)
-    13. hideStart targets the startText <div> and hides it once the startBtn begins the quiz/timer();
-    14. viewScores skips the renderQuestion(), toggleQuestion(), endGame() and checkScore() programs and goes directly to calling scoreBoard()
+    1a. quizArrayIndex is simply a counter for the quizQuestions array; it starts at 0 and will end the timer if there are no more questions
+    1b. quizArrayIndex also is as an initiator/array[i] variable in two for loops:
+        1. The 1st loop is stored in renderQuestion(); this innerHTMLs the question, then fills buttons with "selection" content array items 
+        2. The 2nd loop is stored in toggleQuestion(); this checks for the data-index "choice" on event.target to compare it to the "answer"
+
+    2. header is only used once; on the gif provided for the assignment model, "VIEW HIGHSCORES" + "TIME: 75" disappears on scoreBoard() call
+
+    3. viewScores skips the renderQuestion(), toggleQuestion(), endGame() and checkScore() programs and goes directly to calling scoreBoard()
+
+    4. hideStart targets the startText <div> and hides it once the startBtn begins the quiz/timer();
+
+    5. startBtn relates to the id of the "Start Quiz" button on the home screen (first sequence); when clicked it calls timer() & render?()
+
+    6. quizSection is constantly emptied and refilled with: quizQuestions, endGame (enter initials), and the scoreBoard
+
+    7. acknowledgeAnswer is a <div> with an empty <p> that will either say "Correct" or "Wrong", or alert the user when initial input is 🗑️
+
+    8. validateAnswer is the <p> within acknowledgeAnswer that either acknowledgesAnswer or warns the user if (no initials OR > 4 letters)
+
+    9a. timeInCorner gets the <span> specifically wrapped around the textContent 75
+    9b. timeInCorner (html) gets reassigned timeRemaining for each countDown() interval, and is used to +/- or check for time as well
+
+    10. timeRemaining is just an integer! it decreases with the countDown(), and at endGame() it is the value assigned to finalScore 
+
+    11. callCountDown is located in the timer(), it calls countDown() every 1000ms until the endGame() clearsOut this `timeoutID`
+
+    12. finalScore is only declared now; it is heavily tied to timeRemaining; once it has a score, it gets added to the newScore object
+
+    13a. userScores will be assigned either an [] if no scores exist, or an array of newScores, which get added to the scoreBoard() page
+
+    13b. 'userScores', the localStorage Key, is parsed(get) and stringified(set) - it will always ever only be one key of 1 or more objects
+
+    14. newScore is an object that receives the k:v pairs "name" (initials) and "score" (finalScore) and is pushed to the userScores array
 */
+let quizArrayIndex;
+let header = document.getElementsByTagName('header');
+let viewScores = document.getElementById('view-highscores');
+let hideStart = document.getElementsByClassName('startText');
+let startBtn = document.getElementById('start');
 let quizSection = document.querySelectorAll('.quiz');
-let timeRemaining = 75;
+let acknowledgeAnswer = document.getElementById('acknowledge-answer');
+let validateAnswer = document.getElementById('validate-answer');
 let timeInCorner = document.getElementById('timer');
+let timeRemaining = 75;
 let callCountDown;
 let finalScore;
 let userScores;
 let newScore
-let quizArrayIndex;
-let header = document.getElementsByTagName('header');
-let startBtn = document.getElementById('start');
-let acknowledgeAnswer = document.getElementById('acknowledge-answer');
-let validateAnswer = document.getElementById('validate-answer');
-let hideStart = document.getElementsByClassName('startText');
-let viewScores = document.getElementById('view-highscores');
 
 // When "View Highscores" is clicked on home page, hide header, check localStorage for all prior scores, and show them on the scoreBoard()
 viewScores.addEventListener('click', function() {
