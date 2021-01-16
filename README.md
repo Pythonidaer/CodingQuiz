@@ -32,11 +32,13 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 - `resetGame()` clears Storage object and also empties HTML content in the `<ul>`
   
 ## Credits
-[Stack Overflow](https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page) How to make my button re-direct to a new page.
+[Stack Overflow](https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page) 
 
-[Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY) This tutorial helped me understand how to make the quiz start on a second page.
+[Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY) 
 
-[GitHub: Brian Codex](https://github.com/briancodex/quiz-app-js) Accompanying code to the Brian Design video.
+[GitHub: Brian Codex](https://github.com/briancodex/quiz-app-js)
+
+[Coding Quiz App](https://github.com/jenniferkirwin/code-quiz)
 
 [Arrow Functions](https://medium.com/@ExplosionPills/arrow-functions-as-simple-as-i-can-make-them-79d975a7883a)
 
