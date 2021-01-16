@@ -10,6 +10,12 @@
 
 ## Usage
 This repo is simply a homework assignment. Feel free to inspect the code and notice how I made a Coding Quiz application:
+- Looping over arrays and objects
+- Nesting arrays within objects within arrays
+- Single-page application
+- Functions calling each other
+- Utilizing the Storage Object
+- Utilizing setTimeout as both a timer() as well as a brief alert popup
 
   
 ## Credits
@@ -55,7 +61,7 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 
 [Jennifer Kirwin code-quiz](https://github.com/jenniferkirwin/code-quiz)
 
-[.dataset](hhttps://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset)
+[.dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/dataset)
 
 [stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
 
@@ -96,8 +102,5 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 ## License
 I've chosen an MIT License. Do what you'd like with this material.
 
-#### The Proof
-![Sample]()
-
 #### The Website
-![Sample]()
+![Coding Quiz](assets/images/homepage.png)
