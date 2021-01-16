@@ -12,6 +12,11 @@ header p {
     margin: 0;
 }
 
+#view-highscores {
+    cursor: pointer;
+    padding: 0 20px 15px 0;
+}
+
 header > p:first-child {
     color: rgb(74, 29, 126);
 }
@@ -29,12 +34,12 @@ h1 {
     text-align: center;
 }
 
-.flexbox {
+ .startText {
     display: flex;
     flex-direction: column;
 }
 
-.flexbox > p {
+ .startText > p {
     text-align: center;
 }
 
@@ -139,7 +144,7 @@ li {
         margin: 0 auto;
     }
 
-    .flexbox > p {
+     .startText > p {
         font-size: 1rem;
     }
 }
