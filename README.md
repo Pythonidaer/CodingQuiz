@@ -156,3 +156,6 @@ I've chosen an MIT License. Do what you'd like with this material.
 
 #### The Website
 ![Coding Quiz](assets/images/homepage.png)
+
+## Contact:
+You can email me at codefolio.work@gmail.com
